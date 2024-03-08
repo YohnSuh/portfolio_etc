@@ -3,16 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/common.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--fontawesome-->
     <script src="https://kit.fontawesome.com/7c72cc71ff.js" crossorigin="anonymous"></script>
+    <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>포트폴리오</title>
 </head>
 <body>
     <!--topLayout-->
     <header id="topLayout">
-        <!--h1-->
+        <div class="top-wrapper">
+            <div class="icon-wrap">
+                <!--로고-->
+                <h1><i class="fa-solid fa-igloo"></i></h1>
+                <div class="m-menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div><!--m-menu-icon-->
+            </div><!--icon-wrap-->
+            <div class="menu-wrap">
+                <ul>
+                    <li>메인</li>
+                    <li>소개</li>
+                    <li>포트폴리오</li>
+                    <li>기타</li>
+                </ul>
+            </div><!--menu-wrap-->
+        </div><!--top-wrapper-->
     </header><!--topLayout-->
     <!--mainLayout-->
     <div id="mainLayout">
@@ -23,39 +46,189 @@
                     <!-- 변수명 영역 -->
                     <div class="variable-wrap">
                         <h2 class="var-title">
-                            <strong>변수명을 만들어 드립니다.</strong>
+                            <strong>변수명을<br>만들어 드립니다.</strong>
                         </h2>
-                        <p class="desc">변수의 조건을 입력하면 조건에 맞는 변수명을 만들어 드립니다.</p>
+                        <br>
+                        <p class="var-desc">변수의 조건을 입력하면 조건에 맞는 변수명을 만들어 드립니다.</p>
                         <form class="var-naming-box">
                             <input type="text" placeholder="조건을 입력해주세요.">
-                            <button type="submit" class="naming-btn"></button>
+                            <button type="submit" class="naming-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
-                    </div>
+                    </div><!--variable-wrap-->
                     <!-- 포폴 팝업 슬라이드 영역 -->
-                    <div class="popup-slide-wrap">
-
-                    </div>
-                </div>
+                    <div class="popup-slide-box">
+                        <div class="swiper popup-slide-wrap">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">Slide 1</div>
+                              <div class="swiper-slide">Slide 2</div>
+                              <div class="swiper-slide">Slide 3</div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                          
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                          
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div><!--popup-slide-wrap-->
+                    </div><!--popup-slide-box-->
+                </div><!--inner-->
             </section>
             <!--section1 : e-->
             <!--section2 : s-->
             <section class="section section2">
-
+                <div class="inner">
+                    <h3 class="title">
+                        <strong>소개</strong>
+                    </h3>
+                    <!-- 소개 내용 -->
+                    <div class="info-wrap">
+                        <div class="info-item inof1">
+                            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div><!--info-item item1-->
+                        <div class="info-item inof2">
+                            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div><!--info-item item2-->
+                        <div class="info-item inof3">
+                            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div><!--info-item item3-->
+                    </div><!--info-wrap-->
+                </div><!--inner-->
             </section>
             <!--section2 : e-->
             <!--section3 : s-->
             <section class="section section3">
-
+                <div class="inner">
+                    <h3 class="title">
+                        <strong>포트폴리오</strong>
+                    </h3>
+                    <!-- 포폴 상세 슬라이드 -->
+                    <div class="portfolio-slide-box">
+                        <div class="swiper portfolio-slide-wrap">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="p-img-wrap">
+                                        <img src="#" alt="포트폴리오 상세 이미지">
+                                    </div><!--p-img-wrap-->
+                                    <div class="p-desc-wrap">
+                                        <div>
+                                            <strong class="tit">포트폴리오 이름</strong>
+                                            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        </div>
+                                        <div class="skill">
+                                            <span>html</span>
+                                            <span>css</span>
+                                            <span>javascript</span>
+                                            <span>java</span>
+                                            <span>vue</span>
+                                        </div><!--skill-->
+                                    </div><!--p-desc-wrap-->
+                                </div><!--swiper-slide-->
+                                <div class="swiper-slide">
+                                    <div class="p-img-wrap">
+                                        <img src="#" alt="포트폴리오 상세 이미지">
+                                    </div><!--p-img-wrap-->
+                                    <div class="p-desc-wrap">
+                                        <div>
+                                            <strong class="tit">포트폴리오 이름</strong>
+                                            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        </div>
+                                        <div class="skill">
+                                            <span>html</span>
+                                            <span>css</span>
+                                            <span>javascript</span>
+                                            <span>java</span>
+                                            <span>vue</span>
+                                        </div><!--skill-->
+                                    </div><!--p-desc-wrap-->
+                                </div><!--swiper-slide-->
+                                <div class="swiper-slide">
+                                    <div class="p-img-wrap">
+                                        <img src="#" alt="포트폴리오 상세 이미지">
+                                    </div><!--p-img-wrap-->
+                                    <div class="p-desc-wrap">
+                                        <div>
+                                            <strong class="tit">포트폴리오 이름</strong>
+                                            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        </div>
+                                        <div class="skill">
+                                            <span>html</span>
+                                            <span>css</span>
+                                            <span>javascript</span>
+                                            <span>java</span>
+                                            <span>vue</span>
+                                        </div><!--skill-->
+                                    </div><!--p-desc-wrap-->
+                                </div><!--swiper-slide-->
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                          
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div><!--portfolio-slide-wrap-->
+                    </div><!--portfolio-slide-box-->
+                </div><!--inner-->
             </section>
             <!--section3 : e-->
             <!--section4 : s-->
             <section class="section section4">
-
+                <div class="inner">
+                    <h3 class="title">
+                        <strong>기타</strong>
+                    </h3>
+                    <div>
+                        <div class="study-desc-wrap">
+                            <strong class="tit">개인공부</strong>
+                            <p class="desc">개인 공부입니다. 어쩌구 저쩌구</p>
+                        </div><!--study-desc-wrap-->
+                    </div>
+                    <!--모바일에선 하나만 보이는 슬라이드, 태블릿 이상에선 슬라이드 기능x-->
+                </div><!--inner-->
             </section>
             <!--section4 : e-->
         </div><!--main-wrapper-->
     </div><!--mainLayout-->
     <!--bottomLayout-->
     <footer id="bottomLayout"></footer><!--bottomLayout-->
+    <script>
+        // 모바일 헤더 메뉴
+        const mMenuBtn = document.querySelector('.m-menu-icon');
+        const mMenu = document.querySelector('.menu-wrap');
+
+        mMenuBtn.addEventListener('click', () => {
+            mMenuBtn.classList.toggle('on');
+            mMenu.classList.toggle('on');
+        });
+
+        // 변수명 부분 너비 일정하게
+        window.addEventListener('DOMContentLoaded', () => {
+            const varTit = document.querySelector('.var-title');
+            const varDesc = document.querySelector('.var-desc');
+            const varForm = document.querySelector('.var-naming-box');
+            let varWidth = varTit.offsetWidth;
+            varDesc.style.width = varWidth + 'px';
+            varForm.style.width = varWidth + 'px';
+        });
+
+        // 포트폴리오 팝업 슬라이드
+        const swiper = new Swiper('.popup-slide-wrap', {
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>

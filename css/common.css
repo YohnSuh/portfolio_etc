@@ -1,7 +1,27 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 :root {
     --color-black: #000;
     --color-white: #fff;
-    --space-10: 10px;
-    --space-20: 20px;
-    --space-30: 30px;
+    --color-gray: #ccc;
+    --color-main: #b981c7;
+    --color-sub1: rgb(91, 80, 100);
+    --color-sub2: #caa9d3;
+    --rgba-black: rgba(0,0,0,.1);
+    --rgba-white: rgba(255,255,255,.3);
+    --space-small: 10px;
+    --space-middle: 30px;
+    --space-large: 60px;
+    --font-tit: 'yg-jalnan';
+    --font-basic: 'Pretendard-Regular';
 }
