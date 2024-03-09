@@ -22,6 +22,8 @@
     --space-small: 10px;
     --space-middle: 30px;
     --space-large: 60px;
-    --font-tit: 'yg-jalnan';
+    --radius-small: 5px;
+    --radius-middle: 20px;
+    --font-title: 'yg-jalnan';
     --font-basic: 'Pretendard-Regular';
 }
