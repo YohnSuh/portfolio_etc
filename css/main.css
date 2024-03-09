@@ -46,5 +46,11 @@ body {font-family: var(--font-basic);}
 #mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-img-wrap {height: 50vw;overflow: hidden;border-radius: var(--radius-middle);}
 #mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-img-wrap .swiper-slide {width: 100%;height: 100%;}
 #mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-img-wrap .swiper-slide img {width: 100%;height: 100%;object-fit: cover;}
-#mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-desc-wrap .p-desc-wrap {display: flex;}
+#mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-desc-wrap .tit {display: block;font-size: 16px;margin-top: var(--space-small);margin-bottom: calc(var(--space-small) / 2);}
+#mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-desc-wrap .p-desc-wrap {display: flex;justify-content: space-between;align-items: first baseline;}
+#mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-desc-wrap .p-desc-wrap .desc {margin-right: calc(var(--space-small) / 2);text-align: justify-all;font-size: 12px;}
+#mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-desc-wrap .p-desc-wrap .skill span {display: inline-block;color:var(--color-sub2);font-size: 10px;border: 1px solid var(--color-sub2);padding: calc(var(--space-small) / 4) var(--space-small);border-radius: 100px;}
+#mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-desc-wrap .p-desc-wrap .skill span:hover {background-color: var(--color-sub2);color: var(--color-white);}
+/* main section4 */
+#mainLayout .main-wrapper .section4 .title {font-size: 18px;margin-top: var(--space-large);margin-bottom: var(--space-middle); text-align: center;font-family: var(--font-title);}
 /* footer */
