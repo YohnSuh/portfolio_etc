@@ -183,13 +183,82 @@
                     <h3 class="title">
                         <strong>기타</strong>
                     </h3>
-                    <div>
+                    <div class="a" style="display:flex;align-items: end;">
+                        <div>
+                            <div class="study-desc-wrap">
+                                <strong class="tit">개인공부</strong>
+                                <p class="desc">개인 공부입니다.<br>어쩌구 저쩌구</p>
+                            </div><!--study-desc-wrap-->
+                        </div>
+                        <!--모바일에선 하나만 보이는 슬라이드, 태블릿 이상에선 슬라이드 기능x-->
+                        <div class="swiper study-slide-box" style="width: 60%;border: 1px solid;">
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <ul>
+                                        <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                        <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                        <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                        <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                        <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                        <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul>
+                                        <li><a href="#">목록 입니다.</a></li>
+                                        <li><a href="#">목록 입니다.</a></li>
+                                        <li><a href="#">목록 입니다.</a></li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul>
+                                        <li><a href="#">목록 입니다.</a></li>
+                                        <li><a href="#">목록 입니다.</a></li>
+                                        <li><a href="#">목록 입니다.</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                          
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div style="text-align: center;margin-top: 50px;">
                         <div class="study-desc-wrap">
                             <strong class="tit">개인공부</strong>
-                            <p class="desc">개인 공부입니다. 어쩌구 저쩌구</p>
+                            <p class="desc">개인 공부입니다.<br>어쩌구 저쩌구</p>
                         </div><!--study-desc-wrap-->
+                        <div>
+                            <ul style="text-align: left;border:1px solid; margin: 10px auto; width: 90%;padding: 10px;">
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                            </ul>
+                            <ul style="text-align: left;border:1px solid; margin: 10px auto; width: 90%;padding: 10px;">
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                            </ul>
+                            <ul style="text-align: left;border:1px solid; margin: 10px auto; width: 90%;padding: 10px;">
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                                <li><a href="#">목록 입니다. 목록 입니다.</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <!--모바일에선 하나만 보이는 슬라이드, 태블릿 이상에선 슬라이드 기능x-->
                 </div><!--inner-->
             </section>
             <!--section4 : e-->
@@ -254,6 +323,7 @@
         });
         pfImgSlide.controller.control = pfDescSlide;
         pfDescSlide.controller.control = pfImgSlide;
+
     </script>
 </body>
 </html>
