@@ -1,0 +1,18 @@
+@media all and (min-width: 768px) {
+    #mainLayout {}
+    /* main section1 */
+    #mainLayout .main-wrapper .section1 .inner {display: flex;justify-content: space-between;align-items: end;}
+    #mainLayout .main-wrapper .section1 .variable-wrap {width: 100%;text-align: left;}
+    #mainLayout .main-wrapper .section1 .var-title {text-align: left;}
+    #mainLayout .main-wrapper .section1 .var-naming-box {margin: unset;}
+    /* main section2 */
+    #mainLayout .main-wrapper .section2 .info-wrap {display: flex;align-items: flex-start;}
+    #mainLayout .main-wrapper .section2 .info-wrap .info-item {flex: 1;margin-right: var(--space-small);margin-bottom: 0;}
+    #mainLayout .main-wrapper .section2 .info-wrap .info-item:last-child {margin-right: 0;}
+    /* main section3 */
+    #mainLayout .main-wrapper .section3 .portfolio-slide-box {display: flex;}
+    #mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-desc-wrap {width: 75%;margin-left: var(--space-small);}
+    #mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-desc-wrap .tit {font-size: 24px;}
+    #mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-desc-wrap .p-desc-wrap .desc {font-size: 18px;margin-right: var(--space-small);}
+    
+}   

@@ -1,0 +1,16 @@
+@media all and (min-width: 1200px) {
+    #topLayout .top-wrapper {display: flex;justify-content: space-between;align-items: center;max-width: 1200px;margin:0 auto;}
+    #topLayout .top-wrapper .icon-wrap {display: inline;width: auto;margin: 0;padding:0;}
+    #topLayout .top-wrapper .m-menu-icon {display: none;}
+    #topLayout .top-wrapper .menu-wrap {display: block;width: 100%;}
+    #topLayout .top-wrapper .menu-wrap ul {display: flex;justify-content: space-between;font-size: 18px;}
+    #topLayout .top-wrapper .menu-wrap ul li {display: block;flex:1;padding: calc(var(--space-small) * 2);}
+    #topLayout .top-wrapper .menu-wrap ul li:hover {background-color: unset;color: var(--color-sub2);}
+    /* main section4 */
+    #mainLayout .main-wrapper .section4 .study-wrapper {display: flex;align-items: end;}
+    #mainLayout .main-wrapper .section4 .study-desc-wrap {max-width: 200px;margin-right: var(--space-small);}
+    #mainLayout .main-wrapper .section4 .study-desc-wrap .tit {font-size: 24px;text-align: left;}
+    #mainLayout .main-wrapper .section4 .study-list-wrap {display: flex;}
+    #mainLayout .main-wrapper .section4 .study-list-wrap .list-box {margin-right: var(--space-small);}
+    #mainLayout .main-wrapper .section4 .study-desc-wrap .desc {font-size: 18px;}
+}
