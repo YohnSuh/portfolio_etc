@@ -6,6 +6,11 @@
     #topLayout .top-wrapper .menu-wrap ul {display: flex;justify-content: space-between;font-size: 18px;}
     #topLayout .top-wrapper .menu-wrap ul li {display: block;flex:1;padding: calc(var(--space-small) * 2);}
     #topLayout .top-wrapper .menu-wrap ul li:hover {background-color: unset;color: var(--color-sub2);}
+    /* main section1 */
+    #mainLayout .main-wrapper .section1 {max-width: 1200px;}
+    #mainLayout .main-wrapper .section1 .variable-wrap {margin-bottom: var(--space-large);}
+    #mainLayout .main-wrapper .section1 .var-title {font-size: 68px;}
+    #mainLayout .main-wrapper .section1 .var-desc {font-size: 28px;}
     /* main section4 */
     #mainLayout .main-wrapper .section4 .study-wrapper {display: flex;align-items: end;}
     #mainLayout .main-wrapper .section4 .study-desc-wrap {max-width: 200px;margin-right: var(--space-small);}

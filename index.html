@@ -315,14 +315,16 @@
         });
 
         // 변수명 부분 너비 일정하게
-        window.addEventListener('DOMContentLoaded', () => {
+        function updateWidth() {
             const varTit = document.querySelector('.var-title');
             const varDesc = document.querySelector('.var-desc');
             const varForm = document.querySelector('.var-naming-box');
             let varWidth = varTit.offsetWidth;
             varDesc.style.width = varWidth + 'px';
             varForm.style.width = varWidth + 'px';
-        });
+        }
+        updateWidth();
+        window.addEventListener('resize', updateWidth);
 
         // 포트폴리오 팝업 슬라이드
         const popupSlide = new Swiper('.popup-slide-wrap', {

@@ -2,7 +2,7 @@
     #mainLayout {}
     /* main section1 */
     #mainLayout .main-wrapper .section1 .inner {display: flex;justify-content: space-between;align-items: end;}
-    #mainLayout .main-wrapper .section1 .variable-wrap {width: 100%;text-align: left;}
+    #mainLayout .main-wrapper .section1 .variable-wrap {width:100%;text-align: left;}
     #mainLayout .main-wrapper .section1 .var-title {text-align: left;}
     #mainLayout .main-wrapper .section1 .var-naming-box {margin: unset;}
     /* main section2 */
