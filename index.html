@@ -31,10 +31,10 @@
             </div><!--icon-wrap-->
             <div class="menu-wrap">
                 <ul>
-                    <li>메인</li>
-                    <li>소개</li>
-                    <li>포트폴리오</li>
-                    <li>기타</li>
+                    <li class="main-tit">메인</li>
+                    <li class="intro-tit">소개</li>
+                    <li class="port-tit">포트폴리오</li>
+                    <li class="etc-tit">기타</li>
                 </ul>
             </div><!--menu-wrap-->
         </div><!--top-wrapper-->
@@ -313,6 +313,77 @@
             mMenuBtn.classList.toggle('on');
             mMenu.classList.toggle('on');
         });
+
+        
+        // 스크롤 이벤트???
+        function scrollHandler() {
+            const top = this.window.pageYOffset;
+            const sec1 = this.document.querySelector('.section1').getBoundingClientRect().top;
+            const sec2 = this.document.querySelector('.section2').getBoundingClientRect().top;
+            const sec3 = this.document.querySelector('.section3').getBoundingClientRect().top;
+            const sec4 = this.document.querySelector('.section4').getBoundingClientRect().top;
+            const mg = 180;
+            const sec1Top = top + sec1 - mg;
+            const sec2Top = top + sec2 - mg;
+            const sec3Top = top + sec3 - mg;
+            const sec4Top = top + sec4 - mg;
+
+            let totalHeight = document.body.scrollHeight - this.window.innerHeight - 1;
+
+            const header = document.querySelector('header');
+            const hLi = document.querySelectorAll('header li');
+            const main = document.querySelector('.main-tit');
+            const intro = document.querySelector('.intro-tit');
+            const port = document.querySelector('.port-tit');
+            const etc = document.querySelector('.etc-tit');
+
+            if(top > 0) {
+                header.classList.add('active');
+            } else {
+                header.classList.remove('active');
+            }
+            if(top >= 0 && top < sec2Top) {
+                for(let i = 0; i < hLi.length; i++) {
+                    hLi[i].style.color = 'white';
+                }
+                main.style.color = 'var(--color-main)';
+                
+            } else if(top >= sec2Top && top < sec3Top) {
+                for(let i = 0; i < hLi.length; i++) {
+                    hLi[i].style.color = 'white';
+                }
+                intro.style.color = 'var(--color-main)';
+            } else if(top >= sec3Top && top < totalHeight) {
+                for(let i = 0; i < hLi.length; i++) {
+                    hLi[i].style.color = 'white';
+                }
+                port.style.color = 'var(--color-main)';
+            } else {
+                for(let i = 0; i < hLi.length; i++) {
+                    hLi[i].style.color = 'white';
+                }
+                etc.style.color = 'var(--color-main)';
+            }
+        };
+        function addScrollListener() {
+            window.addEventListener('scroll', scrollHandler);
+        }
+
+        function removeScrollListener() {
+            window.removeEventListener('scroll', scrollHandler);
+        }
+
+        function handleResize() {
+            if (window.innerWidth >= 1200) {
+                addScrollListener();
+            } else {
+                removeScrollListener();
+            }
+        }
+        window.addEventListener('resize', handleResize);
+
+
+
 
         // 변수명 부분 너비 일정하게
         function updateWidth() {
