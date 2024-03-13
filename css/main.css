@@ -46,7 +46,7 @@ body {font-family: var(--font-basic);}
 #mainLayout .main-wrapper .section3 .title {font-size: 24px;margin-top: var(--space-large); margin-bottom: var(--space-middle); text-align: center; font-family: var(--font-title);}
 #mainLayout .main-wrapper .section3 .portfolio-slide-box {}
 #mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-img-wrap {position:relative;width: 100%;overflow: hidden;border-radius: var(--radius-middle);}
-#mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-img-wrap::after {content: ''; display: block; padding-bottom: 50%;}
+#mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-img-wrap::after {content: ''; display: block; padding-bottom: 60%;}
 #mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-img-wrap .swiper-wrapper {position: absolute;width: 100%;height: 100%;}
 #mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-img-wrap .swiper-slide img {width: 100%;height: 100%;object-fit: cover;}
 #mainLayout .main-wrapper .section3 .portfolio-slide-box .portfolio-desc-wrap .tit {display: block;font-size: 18px;margin-top: var(--space-small);margin-bottom: calc(var(--space-small) / 2);}
